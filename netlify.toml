@@ -1,0 +1,3 @@
+[build]
+publish = "dist/ecard/browser"
+command = "ng build --configuration=production"
