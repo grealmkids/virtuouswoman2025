@@ -1,3 +1,8 @@
 [build]
-publish = "dist/ecard/browser"
-command = "ng build --configuration=production"
+  command = "ng build --configuration=production"
+  publish = "dist/ecard/browser"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  [plugins.inputs]
+  publish_directory = "dist/ecard/browser"
